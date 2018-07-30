@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/item_horizontal_padding"
+        tools:context=".ui.login.LoginActivity">
+
+        <TextView
+            android:id="@+id/tvLoginIntoGroup"
+            style="@style/TitleText"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:gravity="center"
+            android:text="@string/login_into_a_group"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_group_name"
+            style="@style/EditTextStyle"
+            android:layout_marginTop="@dimen/big_margin"
+            android:hint="@string/name_of_a_group"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLoginIntoGroup" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_password"
+            style="@style/EditTextStyle"
+            android:hint="@string/password"
+            android:inputType="textVisiblePassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_group_name" />
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/ActionButton"
+            android:layout_marginTop="@dimen/big_margin"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+        <TextView
+            android:id="@+id/tv_create_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/extra_big_margin"
+            android:gravity="center"
+            android:text="@string/don_t_have_a_group"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+        <Button
+            android:id="@+id/btn_create_group"
+            style="@style/ActionButton"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="@string/create_a_new_group"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_create_group" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

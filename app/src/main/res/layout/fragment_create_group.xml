@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/item_horizontal_padding"
+        tools:context=".ui.login.LoginActivity">
+
+        <TextView
+            android:id="@+id/tvCreateGroup"
+            style="@style/TitleText"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:gravity="center"
+            android:text="@string/create_a_new_group"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_group_name"
+            style="@style/EditTextStyle"
+            android:layout_marginTop="@dimen/big_margin"
+            android:hint="@string/name_of_a_group"
+            android:inputType="textCapWords"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCreateGroup" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_password"
+            style="@style/EditTextStyle"
+            android:hint="@string/password"
+            android:inputType="textVisiblePassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_group_name" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_leader_name"
+            style="@style/EditTextStyle"
+            android:hint="@string/name_of_a_leader"
+            android:inputType="textCapWords"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_leader_mail"
+            style="@style/EditTextStyle"
+            android:hint="@string/mail_of_a_leader"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_leader_name" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_leader_phone"
+            style="@style/EditTextStyle"
+            android:hint="@string/phone_of_a_leader"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_leader_mail" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_group_description"
+            style="@style/EditTextStyle"
+            android:hint="@string/group_description"
+            android:inputType="textCapSentences"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_leader_phone" />
+
+        <Button
+            android:id="@+id/btn_create"
+            style="@style/ActionButton"
+            android:layout_marginTop="@dimen/big_margin"
+            android:text="@string/create"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_group_description" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

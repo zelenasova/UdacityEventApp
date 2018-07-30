@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingTop="@dimen/small_padding"
+    android:paddingBottom="@dimen/small_padding"
+    android:paddingStart="@dimen/item_horizontal_padding"
+    android:paddingEnd="@dimen/item_horizontal_padding" >
+
+    <ImageView
+        android:id="@+id/iv_letter"
+        android:layout_width="@dimen/letter_size"
+        android:layout_height="@dimen/letter_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/ItemText.Big"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/small_margin"
+        android:layout_marginStart="@dimen/item_horizontal_margin"
+        app:layout_constraintBottom_toTopOf="@+id/tv_phone_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_letter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_phone_number"
+        style="@style/ItemText.Regular"
+        android:layout_marginTop="@dimen/mini_margin"
+        app:layout_constraintBottom_toTopOf="@+id/tv_email"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_phone_number" />
+
+
+</android.support.constraint.ConstraintLayout>

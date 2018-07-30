@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "854558054149",
+    "firebase_url": "https://eventapp-11e88.firebaseio.com",
+    "project_id": "eventapp-11e88",
+    "storage_bucket": "eventapp-11e88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854558054149:android:4461bd45785a8e9a",
+        "android_client_info": {
+          "package_name": "peter.kalata.com.eventapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854558054149-n3rhhf036te7obd99nnvhu97qdfpv5pe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJBrx4GcAwtMVgBX1KRuLN_QhlVvSe4wI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

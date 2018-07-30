@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/item_horizontal_padding"
+        tools:context=".ui.main.MainActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                android:background="?android:colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_title"
+            style="@style/EditTextStyle"
+            android:layout_marginEnd="@dimen/item_horizontal_margin"
+            android:layout_marginStart="@dimen/item_horizontal_margin"
+            android:layout_marginTop="@dimen/big_margin"
+            android:hint="@string/title"
+            android:inputType="textCapSentences"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_description"
+            style="@style/EditTextStyle"
+            android:layout_marginEnd="@dimen/item_horizontal_margin"
+            android:layout_marginStart="@dimen/item_horizontal_margin"
+            android:hint="@string/description"
+            android:inputType="textCapSentences"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_title" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_place"
+            style="@style/EditTextStyle"
+            android:layout_marginEnd="@dimen/item_horizontal_margin"
+            android:layout_marginStart="@dimen/item_horizontal_margin"
+            android:hint="@string/place"
+            android:inputType="textCapWords"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_description" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/EditTextStyle"
+            android:layout_marginEnd="@dimen/item_horizontal_margin"
+            android:layout_marginStart="@dimen/item_horizontal_margin"
+            android:hint="@string/date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_place" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/EditTextStyle"
+            android:layout_marginEnd="@dimen/item_horizontal_margin"
+            android:layout_marginStart="@dimen/item_horizontal_margin"
+            android:hint="@string/time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+
+        <Button
+            android:id="@+id/btn_create"
+            style="@style/ActionButton"
+            android:layout_marginEnd="@dimen/item_horizontal_margin"
+            android:layout_marginStart="@dimen/item_horizontal_margin"
+            android:layout_marginTop="@dimen/big_margin"
+            android:text="@string/create"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_time" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
