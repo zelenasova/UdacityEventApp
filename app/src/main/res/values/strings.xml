@@ -60,6 +60,12 @@
     <string name="email">Email</string>
     <string name="phone_number">Phone number</string>
     <string name="next">Continue</string>
+    <string name="first_letter_of_name">ImageView containing first letter of name</string>
+    <string name="edit_name_image">Edit name image</string>
+    <string name="edit_image">Edit image</string>
+    <string name="person_icon">Person image icon</string>
+    <string name="mail_image">Mail image</string>
+    <string name="phone_image">Phone image</string>
 
 
 </resources>

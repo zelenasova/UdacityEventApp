@@ -1,5 +1,6 @@
 package peter.kalata.com.eventapp.widget;
 
+import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
@@ -44,7 +45,7 @@ public class WidgetViewModel extends ViewModel {
         );
     }
 
-    public MutableLiveData<List<Event>> getEvents() {
+    public LiveData<List<Event>> getEvents() {
         return events;
     }
 

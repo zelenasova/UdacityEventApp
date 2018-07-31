@@ -15,6 +15,7 @@
         android:id="@+id/iv_letter"
         android:layout_width="@dimen/letter_size"
         android:layout_height="@dimen/letter_size"
+        android:contentDescription="@string/first_letter_of_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

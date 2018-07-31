@@ -1,13 +1,8 @@
 package peter.kalata.com.eventapp.data.repository;
 
 import android.arch.lifecycle.MutableLiveData;
-import android.database.Cursor;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.text.TextUtils;
-import android.util.Log;
 
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -15,20 +10,14 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
-import io.reactivex.Observable;
-import io.reactivex.Single;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.schedulers.Schedulers;
-import peter.kalata.com.eventapp.data.model.Event.EventType;
-
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
+import io.reactivex.Single;
 import peter.kalata.com.eventapp.App;
 import peter.kalata.com.eventapp.R;
 import peter.kalata.com.eventapp.data.model.Event;
+import peter.kalata.com.eventapp.data.model.Event.EventType;
 import peter.kalata.com.eventapp.data.model.Group;
 import peter.kalata.com.eventapp.data.model.User;
 import peter.kalata.com.eventapp.utils.DateTimeUtils;

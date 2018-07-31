@@ -2,6 +2,7 @@ package peter.kalata.com.eventapp.ui.events;
 
 
 import android.app.NotificationManager;
+import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 import android.content.Context;
@@ -49,7 +50,7 @@ public class EventsViewModel extends ViewModel {
         eventRepository.loadEvents(eventType);
     }
 
-    public MutableLiveData<List<Event>> getEvents() {
+    public LiveData<List<Event>> getEvents() {
         return events;
     }
 

@@ -1,6 +1,7 @@
 package peter.kalata.com.eventapp.ui.settings;
 
 
+import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
@@ -45,7 +46,7 @@ public class SettingsViewModel extends ViewModel {
         return leaveGroupSuccess;
     }
 
-    public MutableLiveData<User> getCurrentUser() {
+    public LiveData<User> getCurrentUser() {
         return currentUser;
     }
 

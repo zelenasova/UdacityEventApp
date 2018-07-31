@@ -1,6 +1,7 @@
 package peter.kalata.com.eventapp.ui.event_detail;
 
 
+import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 import java.util.List;
@@ -54,11 +55,11 @@ public class EventDetailViewModel extends ViewModel {
         return error;
     }
 
-    public MutableLiveData<List<User>> getEventUsers() {
+    public LiveData<List<User>> getEventUsers() {
         return eventUsers;
     }
 
-    public MutableLiveData<User> getCurrentUser() {
+    public LiveData<User> getCurrentUser() {
         return currentUser;
     }
 }

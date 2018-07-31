@@ -45,7 +45,7 @@ public class UsersViewModel extends ViewModel {
         composite.clear();
     }
 
-    public MutableLiveData<List<User>> getUsers() {
+    public LiveData<List<User>> getUsers() {
         return users;
     }
 
